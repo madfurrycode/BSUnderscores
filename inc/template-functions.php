@@ -35,3 +35,19 @@ function bsunderscores_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'bsunderscores_pingback_header' );
+
+/**
+* Add classes to navigation buttons
+*/
+add_filter( 'next_posts_link_attributes', 'bsunderscores_posts_link_attributes' );
+add_filter( 'previous_posts_link_attributes', 'bsunderscores_posts_link_attributes' );
+add_filter( 'next_comments_link_attributes', 'bsunderscores_comments_link_attributes' );
+add_filter( 'previous_comments_link_attributes', 'bsunderscores_comments_link_attributes' );
+
+function bsunderscores_posts_link_attributes() {
+    return 'class="btn btn-outline-primary"';
+}
+
+function bsunderscores_comments_link_attributes() {
+    return 'class="btn btn-outline-primary"';
+}

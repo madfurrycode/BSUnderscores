@@ -17,7 +17,7 @@ get_header();
 
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-9">
+			<div class="col-lg-8">
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main">
 
@@ -45,7 +45,15 @@ get_header();
 
 						endwhile;
 
-						the_posts_navigation();
+						the_post_navigation(array(
+							'prev_text' => esc_html__( '&laquo; Previous Post', 'bsunderscores' ),
+							'next_text' => esc_html__( 'Next Post &raquo;', 'bsunderscores' ),
+						) );
+
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
 
 					else :
 
@@ -57,8 +65,8 @@ get_header();
 					</main><!-- #main -->
 				</div><!-- #primary -->
 			</div>
-			<div class="col-lg-3">
-					<?php get_sidebar(); ?>
+			<div class="col-lg-4">
+				<?php get_sidebar(); ?>
 			</div>
 		</div>
 	</div>
