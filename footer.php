@@ -13,7 +13,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer bg-dark">
 		<div class="container">
 			<div class="site-info text-center">
 				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bsunderscores' ) ); ?>">

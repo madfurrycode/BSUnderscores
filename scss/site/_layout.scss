@@ -4,6 +4,11 @@
 @import "widgets";
 
 /*--------------------------------------------------------------
+# Site - Layout Article
+--------------------------------------------------------------*/
+@import "article";
+
+/*--------------------------------------------------------------
 # Site - Layout Default
 --------------------------------------------------------------*/
 .screen-reader-text {
@@ -12,4 +17,24 @@
 .article-container {
     padding: 30px;
     margin-bottom: 30px;
+}
+.site-footer {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a {
+        color: #fff;
+        text-decoration: none;
+        &:hover {
+            color: #757575;
+            text-decoration: none;
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# Site - Layout Forms
+--------------------------------------------------------------*/
+.form-control {
+    border-radius: 0;
 }

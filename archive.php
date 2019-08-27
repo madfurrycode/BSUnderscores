@@ -11,19 +11,20 @@ get_header();
 ?>
 
 	<div class="container">
+		<div class="card card-body">
+			<header class="page-header">
+				<?php
+				the_archive_title( '<h1 class="page-title">', '</h1>' );
+				the_archive_description( '<div class="archive-description">', '</div>' );
+				?>
+			</header><!-- .page-header -->
+		</div>
 		<div class="row">
 			<div class="col-lg-8">
 				<div id="primary" class="content-area">
 					<main id="main" class="site-main">
 
 					<?php if ( have_posts() ) : ?>
-
-						<header class="page-header">
-							<?php
-							the_archive_title( '<h1 class="page-title">', '</h1>' );
-							the_archive_description( '<div class="archive-description">', '</div>' );
-							?>
-						</header><!-- .page-header -->
 
 						<?php
 						/* Start the Loop */

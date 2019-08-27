@@ -1,0 +1,51 @@
+.card {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+    .card-header {
+      padding: 15px;
+      border: none;
+      background-color: #fff;
+      .entry-title {
+        font-size: 30px;
+        a {
+            color: #333;
+            text-decoration: none;
+            &:hover {
+              color: #555;
+              text-decoration: none;
+            }
+          }
+      }
+      .entry-meta {
+        font-size: 14px;
+        color: #afafaf;
+        a {
+          color: #afafaf;
+          text-decoration: none;
+          &:hover {
+            color: #757575;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .entry-footer {
+        font-size: 14px;
+        border: none;
+        color: #afafaf;
+        background-color: #fff;
+        a {
+          color: #afafaf;
+          text-decoration: none;
+          &:hover {
+            color: #757575;
+            text-decoration: none;
+          }
+        }
+    }
+    .entry-content {
+        background-color: #fff;
+    }
+  }
+  
