@@ -108,7 +108,7 @@ function bsunderscores_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'bsunderscores' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'bsunderscores' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'before_widget' => '<section id="%1$s" class="widget card card-body mb-4 %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2><hr>',
@@ -156,6 +156,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Bootstrap NavWalker.
  */
 require get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
+
+/**
+ * Bootstrap Custom Comments.
+ */
+require get_template_directory() . '/inc/custom-comment.php';
 
 /**
  * Load Jetpack compatibility file.

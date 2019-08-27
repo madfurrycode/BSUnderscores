@@ -9,8 +9,8 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="article-container <?php post_class(); ?>">
-	<header class="entry-header">
+<article id="post-<?php the_ID(); ?>" class="card <?php post_class(); ?>">
+	<header class="card-header entry-header">
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -31,7 +31,7 @@
 
 	<?php bsunderscores_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<div class="card-body entry-content">
 		<?php
 		the_content( sprintf(
 			wp_kses(
@@ -53,7 +53,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="card-footer entry-footer">
 		<?php bsunderscores_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
