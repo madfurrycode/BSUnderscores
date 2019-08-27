@@ -1,0 +1,32 @@
+/* Global Widgets Styling */
+.widget {
+    padding: 30px;
+    .widget-title {
+        font-size: 25px;
+        font-weight: 300;
+        color: #333333;
+    }
+    ul {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+            position: relative;
+            display: block;
+            padding: .75rem 0;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: none;
+            a {
+                color: #333333;
+                &:hover {
+                    color: #222222;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

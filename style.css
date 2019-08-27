@@ -1,0 +1,71 @@
+/*!
+Theme Name: BSUnderscores
+Theme URI: https://github.com/madfurrycode
+Author: Tristan Elliott
+Author URI: https://github.com/madfurrycode
+Description: bsunderscores
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: bsunderscores
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/*--------------------------------------------------------------
+# Site - Layout
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Site - Layout Widgets
+--------------------------------------------------------------*/
+
+/* Global Widgets Styling */
+
+.widget {
+  padding: 30px;
+}
+
+.widget .widget-title {
+  font-size: 25px;
+  font-weight: 300;
+  color: #333333;
+}
+
+.widget ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.widget ul li {
+  position: relative;
+  display: block;
+  padding: 0.75rem 0;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: none;
+}
+
+.widget ul li a {
+  color: #333333;
+}
+
+.widget ul li a:hover {
+  color: #222222;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Site - Layout Default
+--------------------------------------------------------------*/
+
+.screen-reader-text {
+  display: none;
+}
+
+.article-container {
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
